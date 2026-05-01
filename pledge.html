@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>이승민 공약 | 청년일자리 · 공공배달 · 공공은행</title>
+    <meta name="description" content="이승민 부산광역시의원 예비후보의 3대 공약 - 청년 일자리, 공공배달, 공공은행">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:title" content="이승민 후보 공약 | 청년일자리 · 공공배달 · 공공은행">
+    <meta property="og:description" content="내란청산 진심후보 이승민의 3대 공약을 확인하세요.">
+    <meta property="og:image" content="assets/candidate.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="pledge-page">
+
+<!-- ============================================================
+     TOP NAV
+============================================================ -->
+<nav class="top-nav" id="top-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/logo.png" alt="진보당" style="height:20px; margin-right:0.2rem; display:block;">
+            <span class="nav-num">5</span>
+            <span class="nav-name">이승민</span>
+            <span class="nav-sub">부산시의원 예비후보</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">홈</a>
+            <a href="pledge.html" class="nav-link active">공약</a>
+        </div>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="메뉴 열기">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html" class="mobile-link">🏠 홈</a>
+        <a href="pledge.html" class="mobile-link">📋 공약 전체</a>
+        <a href="#" class="mobile-link tab-mobile-link" data-tab="job">· 청년 일자리</a>
+        <a href="#" class="mobile-link tab-mobile-link" data-tab="delivery">· 공공배달</a>
+        <a href="#" class="mobile-link tab-mobile-link" data-tab="bank">· 공공은행</a>
+    </div>
+</nav>
+
+<!-- ============================================================
+     PLEDGE HERO (공약 페이지 상단)
+============================================================ -->
+<section class="pledge-hero">
+    <div class="pledge-hero-bg"></div>
+    <div class="pledge-hero-content">
+        <span class="pledge-hero-tag">PLEDGE · 공약</span>
+        <h1 class="pledge-hero-title">이승민의 <span class="accent-red">3대 공약</span></h1>
+        <p class="pledge-hero-sub">청년이 살고 싶은 부산을 만들겠습니다</p>
+    </div>
+    <div class="pledge-hero-wave">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z" fill="#f0f7ff"/>
+        </svg>
+    </div>
+</section>
+
+<!-- ============================================================
+     TAB NAVIGATION
+============================================================ -->
+<div class="tab-nav-wrap" id="tab-nav-wrap">
+    <div class="tab-nav" id="tab-nav">
+        <button class="tab-btn active" id="tab-job" data-tab="job">
+            <span class="tab-icon">💼</span>
+            <span class="tab-label">청년 일자리</span>
+        </button>
+        <button class="tab-btn" id="tab-delivery" data-tab="delivery">
+            <span class="tab-icon">🛵</span>
+            <span class="tab-label">공공배달</span>
+        </button>
+        <button class="tab-btn" id="tab-bank" data-tab="bank">
+            <span class="tab-icon">🏦</span>
+            <span class="tab-label">공공은행</span>
+        </button>
+        <!-- 슬라이딩 인디케이터 -->
+        <div class="tab-indicator" id="tab-indicator"></div>
+    </div>
+</div>
+
+<!-- ============================================================
+     TAB CONTENTS
+============================================================ -->
+<main class="pledge-main" id="pledge-main">
+
+    <!-- ===================== TAB 1: 청년 일자리 ===================== -->
+    <section class="pledge-tab-content active" id="content-job">
+
+        <!-- ① 타이틀 히어로 -->
+        <div class="job-title-hero">
+            <img src="assets/youth_busan.png" alt="청년이 모여드는 부산" class="job-hero-img reveal-hero">
+            <div class="job-hero-overlay">
+                <div class="job-project-badge reveal-hero" style="animation-delay:.1s">부산경제살리기 <strong>프로젝트①</strong></div>
+                <h2 class="job-main-title reveal-hero" style="animation-delay:.2s">청년 일자리</h2>
+            </div>
+        </div>
+
+        <!-- ② 예산 섹션 -->
+        <div class="job-budget-section">
+            <div class="pledge-section-container">
+                <h3 class="job-budget-title reveal">예산은 부족하지 않습니다<br><span>제대로 쓰면 됩니다</span></h3>
+
+                <div class="job-budget-wrap reveal">
+                    <!-- 표 -->
+                    <div class="job-budget-table-wrap">
+                        <p class="table-unit">단위 : 천억 원</p>
+                        <table class="job-budget-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>2016년</th>
+                                    <th>2026년</th>
+                                    <th>증가율</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>대한민국 예산</th>
+                                    <td>3,864</td>
+                                    <td class="td-now">7,279</td>
+                                    <td class="td-rate">88% <i class="fas fa-arrow-trend-up"></i></td>
+                                </tr>
+                                <tr>
+                                    <th>부산시 예산</th>
+                                    <td>113</td>
+                                    <td class="td-now">193</td>
+                                    <td class="td-rate">71% <i class="fas fa-arrow-trend-up"></i></td>
+                                </tr>
+                                <tr>
+                                    <th>연제구 예산</th>
+                                    <td>2.6</td>
+                                    <td class="td-now">6.1</td>
+                                    <td class="td-rate">134% <i class="fas fa-arrow-trend-up"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 배지 -->
+                    <div class="job-2x-badge reveal">
+                        <span class="badge-years">10년 만에</span>
+                        <span class="badge-big">약 2배</span>
+                        <span class="badge-sub">증가</span>
+                    </div>
+                </div>
+
+                <div class="job-budget-body reveal">
+                    <p>일하는 사람들 실질임금은 <strong>제자리</strong>인 반면 국가예산은 10년 새 2배 늘었습니다. <strong>공공성으로 일자리를 창출하고 경제를 살려야하는 이유입니다.</strong></p>
+                    <p>또한 AI대전환, 기후위기, 미국발 전쟁과 강탈, 외교위기로 인해 더 이상 <strong>민간에만 맡겨두는 경제구조는 불가능한 시대입니다.</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ③ 6대 공약 섹션 -->
+        <div class="job-pledges-section">
+            <div class="pledge-section-container">
+
+                <div class="job-pledges-header reveal">
+                    <h3 class="job-pledges-main-title">부산소멸을 막을<br><strong>청년일자리와 주거개선</strong></h3>
+                    <p class="job-pledges-sub">부산시와 연제구 예산 제대로 쓰면 이룰 수 있습니다</p>
+                </div>
+
+                <!-- 도입 텍스트 -->
+                <div class="job-intro-box reveal">
+                    <p>청년들이 부산을 떠나고 싶어 떠나는 것이 아닙니다. <strong>좋은 일자리가 없어 떠납니다.</strong></p>
+                    <p>당장 '대기업을 유치하겠다'는 구호보다 있는 일자리를 좋게 가꾸는 것이 우선입니다.</p>
+                    <p>아울러 공공일자리를 대폭 확대하여 청년일자리 질이 높아지도록 사회적 기틀을 만드는 일이 우선입니다. 행정의 시선이 청년에게 향해있지 않기 때문에 방치된 일들입니다.</p>
+                    <p>진보당은 부산행정의 시선이 가장 먼저 청년들을 향하도록 정책을 설계하고자 합니다.</p>
+                </div>
+
+                <!-- 6대 공약 그리드 -->
+                <div class="job-items-grid">
+
+                    <!-- 1 -->
+                    <div class="job-item-card reveal">
+                        <div class="job-item-num">1</div>
+                        <div class="job-item-body">
+                            <h4 class="job-item-title">경험과 실력을 쌓아주는<br><strong>청년공공인턴 대폭확대!</strong></h4>
+                            <p class="job-item-text">청년 공공인턴의 평생일자리는 아닙니다. 하지만 단순 행정보조가 아닌 공공 부문의 요직하고 창의적인 업무를 수행하게 함으로써 경험과 실력을 쌓아 취업과 창업의 디딤돌을 높일 수 있습니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="job-item-card reveal" style="transition-delay:.08s">
+                        <div class="job-item-num">2</div>
+                        <div class="job-item-body">
+                            <h4 class="job-item-title">초년생의 든든한 빽<br><strong>'연제 노동권리 119'</strong></h4>
+                            <p class="job-item-text">부산은 의사 사각지대인 5인미만 사업장 비율이 압도적으로 높습니다. 직장갑질과 부당대우를 받아도 기댈 곳이 없는 것이 현실입니다. 행정이 나서면 획기적으로 해결할 수 있는 문제입니다.</p>
+                            <ul class="job-item-sublist">
+                                <li><strong>Ⅰ. 구청장 직속 직장갑질 119</strong> : 구청 내 신문 노무사가 상주하는 진단창구를 신설합니다. 익명 제보시스템을 통해 직장 내 괴롭힘, 임금체불, 부당해고에 대해 즉각적인 법률지원과 중재를 합니다.</li>
+                                <li><strong>Ⅱ. 5인미만사업장 구청 전수관리</strong> : 각 구청별로 근로기준법 사각지대에 있는 5인미만 사업장을 전수관리합니다. 노동 가이드라인을 제정하여 준수하는 사업장에 혜택을 제공합니다. 구청이 쓸 수 있는 권한을 사용하여 노동법 준수를 강제합니다.</li>
+                                <li><strong>Ⅲ. 청년 노동자 '권리보호 바우처'</strong> : 노동법위반 사례에 대해 법적 대응이 필요한 청년들에게 소송 비용이나 상담비용을 바우처로 지급하여 돈이 없어 권리를 포기하는 일이 없도록 합니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="job-item-card reveal" style="transition-delay:.16s">
+                        <div class="job-item-num">3</div>
+                        <div class="job-item-body">
+                            <h4 class="job-item-title"><strong>전세사기제로!</strong><br>행정이 나서면 가능합니다</h4>
+                            <p class="job-item-text">계절별 때마다 발생한 전세사기, 행정이 나서면 해결할 수 있습니다. 구청에 '청년 주거복지 매니저'를 신설하여 계약 단계부터 악성 임대인 조회, 권리 분석까지 원스톱으로 지원합니다. 주거복지 매니저 양성을 청년을 대상으로 하여 일자리 창출로 이어집니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="job-item-card reveal" style="transition-delay:.24s">
+                        <div class="job-item-num">4</div>
+                        <div class="job-item-body">
+                            <h4 class="job-item-title">원룸타운 정주여건<br><strong>획기적 개선!</strong></h4>
+                            <p class="job-item-text">원룸타운 내 노후건물을 구청이 임대하여 공유오피스, 스마트 세탁소, 커뮤니티 주방이 결합한 라운지를 곳곳에 배치합니다. 아울러 골목길 조도를 높이고 AI보안 카메라를 결합해 안전한 거리로 바꿉니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="job-item-card reveal" style="transition-delay:.32s">
+                        <div class="job-item-num">5</div>
+                        <div class="job-item-body">
+                            <h4 class="job-item-title">실질적 도움이 되는<br><strong>청년 주거수당 보장!</strong></h4>
+                            <p class="job-item-text">현재 주거 지원은 2년은 청년의 현실을 반영하지 못한 탁상행정입니다. 지원기간 대폭 연장이 필요합니다. 진짜 자립할 수 있는 시간을 서울처럼 구청이 보장해야합니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="job-item-card reveal" style="transition-delay:.4s">
+                        <div class="job-item-num">6</div>
+                        <div class="job-item-body">
+                            <h4 class="job-item-title">전세보증금 반환보증료<br><strong>무상지원!</strong></h4>
+                            <p class="job-item-text">전세사기를 막기 위한 반환보증보험료를 청년 일인이 부담하는 것은 정책 실패를 청년이 해결하는 것입니다. 당장 제도를 개선할 수 없다면 모든 청년 세입자를 대상으로 전세보증금 반환보증보험 가입비(보증료)를 구청이 <strong>100% 전액 지원</strong>합니다.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===================== TAB 2: 공공배달 ===================== -->
+    <section class="pledge-tab-content" id="content-delivery">
+
+        <!-- ① 타이틀 히어로 -->
+        <div class="del-title-hero">
+            <div class="del-hero-inner">
+                <div class="del-hero-text">
+                    <div class="job-project-badge reveal-hero" style="margin-bottom:0.5rem;display:inline-block;">부산경제살리기 <strong>프로젝트②</strong></div>
+                    <p class="del-sub-label reveal-hero">자영업자가 살아야 부산이 삽니다</p>
+                    <h2 class="del-main-title reveal-hero" style="animation-delay:.1s">동백배달</h2>
+                    <div class="del-miracle-badge reveal-hero" style="animation-delay:.2s">
+                        점유율 <strong>70%</strong>의 기적
+                        <span class="del-badge-note">*대형 프랜차이즈 완전제외(30%)</span>
+                    </div>
+                </div>
+                <img src="assets/dongbaek_delivery.png" alt="동백배달 마스코트" class="del-hero-img reveal-hero" style="animation-delay:.15s">
+            </div>
+        </div>
+
+        <!-- ② 문제 제기 -->
+        <div class="del-problem-section">
+            <div class="pledge-section-container">
+                <h3 class="del-problem-title reveal">언제까지 <strong>배민·쿠팡</strong>의<br><strong class="red">'수수료 노예'</strong>로 살아야 합니까?</h3>
+                <div class="del-problem-body reveal">
+                    <p>배달앱은 특별한 기술도 아닙니다. 그저 먼저 시작했다는 이유만으로 우리 동네 사장님의 땀방울과 부산시민의 소중한 돈이 매달 수천억 원씩 수도권·해외자본으로 유출되고 있습니다.</p>
+                    <p>서울은 신한은행-땡겨요 민관합동 배달앱이 점유율 10% 달성 중입니다. 부산은 불안정한 민관합동 앱을 넘어 <strong>완전 공공배달앱으로 점유율 70% 기적</strong>을 향해 달릴 수 있습니다.</p>
+                    <p>불가능한 일이 아니라 <strong>부산시가 무능하고 무관심할 뿐입니다.</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ③ 동백배달 압승! 비교표 -->
+        <div class="del-compare-section">
+            <div class="pledge-section-container">
+                <div class="del-compare-header reveal">
+                    <h3 class="del-compare-title">동백배달 압승!</h3>
+                    <p class="del-compare-sub">소비자 · 자영업자 · 라이더 상생으로 부산 경제 살리는 앱, 안 쓸 이유가 있겠습니까</p>
+                </div>
+
+                <!-- 소비자 -->
+                <div class="del-compare-block block-consumer reveal">
+                    <div class="del-group-label consumer">소비자</div>
+                    <div class="del-table-wrap">
+                        <p class="del-table-note">*2만원 주문기준 예시</p>
+                        <div class="del-table-scroll">
+                            <table class="del-compare-table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>민간배달앱<span class="th-note">(무료배달)</span></th>
+                                        <th class="th-dongbaek">동백배달</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>음식가격</td><td>20,000원</td><td class="td-db">20,000원</td></tr>
+                                    <tr><td>배달비</td><td>2,800원<span class="td-note">(플랫폼 부담)</span></td><td class="td-db">3,000원<span class="td-note">(동백배달 부담)</span></td></tr>
+                                    <tr class="tr-total"><td>총 결제금액</td><td>20,000원</td><td class="td-db td-win">20,000원</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="del-benefit-badge consumer-badge">동일한<br><strong>무료배달</strong><br><span class="badge-extra">캐시백 10% 추가혜택</span></div>
+                    </div>
+                </div>
+
+                <!-- 자영업자 -->
+                <div class="del-compare-block block-owner reveal">
+                    <div class="del-group-label owner">자영업자</div>
+                    <div class="del-table-wrap">
+                        <p class="del-table-note">*2만원 주문기준 예시</p>
+                        <div class="del-table-scroll">
+                            <table class="del-compare-table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>민간배달앱<span class="th-note">(무료배달)</span></th>
+                                        <th class="th-dongbaek">동백배달</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>음식가격</td><td>20,000원</td><td class="td-db">20,000원</td></tr>
+                                    <tr><td>배달료</td><td>-3,200원</td><td class="td-db">-3,000원</td></tr>
+                                    <tr><td>중개 수수료</td><td>-1,560원<span class="td-note">(7.8%)</span></td><td class="td-db">-400원<span class="td-note">(2.0%)</span></td></tr>
+                                    <tr><td>결제 수수료</td><td>-600원<span class="td-note">(3.0%)</span></td><td class="td-db">0원<span class="td-note">(*별도 결제 시 면제)</span></td></tr>
+                                    <tr><td>광고/기타비</td><td>-500원<span class="td-note">(추정)</span></td><td class="td-db">0원<span class="td-note">(*입찰/노출 광고비 전액 무료)</span></td></tr>
+                                    <tr class="tr-total"><td>최종 입금액</td><td>14,140원</td><td class="td-db td-win">16,600원</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="del-benefit-badge owner-badge"><strong>2,460원</strong><br>추가소득발생</div>
+                    </div>
+                    <div class="del-extra-benefits reveal">
+                        <div class="del-extra-item"><span class="extra-tag">추가혜택①</span> 익일 정산 시스템 <span class="extra-note">(민간앱 정산은 3~7일)</span></div>
+                        <div class="del-extra-item"><span class="extra-tag">추가혜택②</span> 방문포장 전액무료</div>
+                        <div class="del-extra-item"><span class="extra-tag">추가혜택③</span> 마케팅자율권 — 민간앱 알고리즘에 종속되지 않고, 단골손님 쿠폰 발행권한 등을 사장님께</div>
+                    </div>
+                </div>
+
+                <!-- 라이더 -->
+                <div class="del-compare-block block-rider reveal">
+                    <div class="del-group-label rider">라이더</div>
+                    <div class="del-table-wrap">
+                        <p class="del-table-note">*2만원 주문기준 예시</p>
+                        <div class="del-table-scroll">
+                            <table class="del-compare-table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>민간배달앱</th>
+                                        <th class="th-dongbaek">동백배달</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>건당 총비용</td><td>6,000원</td><td class="td-db">6,000원</td></tr>
+                                    <tr><td>배달대행사/공공파트너</td><td>-500원</td><td class="td-db">-500원</td></tr>
+                                    <tr><td>플랫폼사/동백배달 수익</td><td>-1,500원</td><td class="td-db">-500원</td></tr>
+                                    <tr class="tr-total"><td>라이더 수령액</td><td>4,000원<span class="td-note">(평균)</span></td><td class="td-db td-win">5,000원<span class="td-note">(평균)</span></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="del-benefit-badge rider-badge"><strong>1,000원</strong><br>추가소득발생<br><span class="badge-extra">전국 최고수준 대우</span></div>
+                    </div>
+                    <p class="del-rider-note reveal">*공공라이더 시스템 구축 : 신속·안전 배달망 구축으로 지역대표 좋은 일자리로 육성</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ④ 연간재원 -->
+        <div class="del-budget-section">
+            <div class="pledge-section-container">
+                <h3 class="del-budget-title reveal">동백배달 운영에 필요한 연간재원 <span>(추정)</span></h3>
+                <div class="del-budget-table-wrap reveal">
+                    <div class="del-budget-table-scroll">
+                        <table class="del-budget-table">
+                            <thead>
+                                <tr><th>항목</th><th>내용</th><th>금액</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>배달앱 운영수익</td><td>중개수수료 수익(2.0%) 180억 + 플랫폼 운영비 60억</td><td class="td-amount">120억 원</td></tr>
+                                <tr><td>배달 수익</td><td>배달료 수익 273억 - 라이더/파트너 지원비 182억</td><td class="td-amount">91억 원</td></tr>
+                                <tr><td>부산은행 상생 출연금</td><td>신한은행-사업명 가오피엔링크 25년 시한은 538억규모 의결 및 저금리 대출 사업중</td><td class="td-amount">500억 원</td></tr>
+                                <tr><td>부산시 보조</td><td>배달 투입 예산 580억 원의 10% 적금으로</td><td class="td-amount">534억 원</td></tr>
+                                <tr class="tr-total-budget"><td>동백배달 운영 예산(총액)</td><td>배달매출 3000억 원에 대한 배달비지비 / 부산 배달매출 1.8조 원(추정) 점유율 50% 기준</td><td class="td-amount td-total-val">1,245억 원</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="del-budget-notes reveal">
+                    <p><i class="fas fa-circle-dot"></i> 부산시 투입 예산 534억 원은 세금낭비가 아니라 <strong>부산 경제부활의 마중물!</strong></p>
+                    <p><i class="fas fa-circle-dot"></i> 장차로 부산공공은행 설립으로 수익기반 완벽한 재정자립 가능 <strong>→ 진보당이 제안하는 궁극적 모델</strong></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===================== TAB 3: 공공은행 ===================== -->
+    <section class="pledge-tab-content" id="content-bank">
+        <!-- ① 타이틀 히어로 -->
+        <div class="bank-title-hero">
+            <div class="bank-hero-overlay">
+                <div class="job-project-badge reveal-hero">부산경제살리기 <strong>프로젝트③</strong></div>
+                <h2 class="bank-main-title reveal-hero" style="animation-delay:.1s">공공은행 도입<br><strong>특별법 제정</strong></h2>
+            </div>
+            <img src="assets/public_bank_hero.png" alt="공공은행 이미지" class="bank-hero-img reveal-hero" style="animation-delay:.2s">
+        </div>
+
+        <!-- ② 문제 제기 1 (BNK) -->
+        <div class="bank-problem-section">
+            <div class="pledge-section-container">
+                <div class="bank-problem-flex reveal">
+                    <div class="bank-problem-text">
+                        <p><strong><span class="red">BNK</span> 부산은행</strong>은 부산시와 16개 구군 예산을 맡아 운용하는 시(구) 금고입니다. 막대한 돈을 맡아 <strong>유무형의 수익</strong>을 내면서도 <strong>겨우 0.x%대의 쥐꼬리 만한 이자</strong>를 줍니다.</p>
+                        <p>게다가 이름만 부산은행이지 <strong>외국인 자본이 46%, 대주주는 롯데입니다.</strong> <strong class="navy">수익은 고스란히 외국과 서울로 빠져나갑니다.</strong></p>
+                        <p>지자체가 직접 자기예산(기금포함)을 자본금으로 <strong>공공은행을 설립하면 수익은 모두 부산시민의 것이 됩니다.</strong> 아울러 부산의 돈이 서울로 빠져나가지 않고 부산안에서 돌면서 <strong>부산의 경제를 살리고 일자리를 만들어 냅니다.</strong></p>
+                    </div>
+                    <div class="bank-budget-box">
+                        <div class="budget-title">부산시 예산</div>
+                        <div class="budget-amount">약 <strong>17조</strong> 원</div>
+                        <div class="budget-title">연제구 예산</div>
+                        <div class="budget-amount">약 <strong class="sky">6천억</strong> 원</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ③ 서명운동 -->
+        <div class="bank-campaign-section">
+            <div class="pledge-section-container">
+                <div class="campaign-box reveal">
+                    <div class="campaign-text-wrap" style="width:100%;">
+                        <p class="q-text">이 좋은 공공은행 왜 안하냐구요?</p>
+                        <h4 class="a-text">은행법이 막고 있기 때문입니다</h4>
+                        <ul class="law-list">
+                            <li><strong>21대 국회</strong> 진보당 강성희 의원 발의 <span class="note">(임기 만료 폐기)</span></li>
+                            <li><strong>22대 국회</strong> 민주당 송재봉 의원 발의 <span class="note">(정무위원회 검토 중)</span></li>
+                        </ul>
+                        <div class="campaign-golden">
+                            <strong>2026지방선거는 부산소멸을 막을 마지막 골든타임입니다</strong>
+                            <p>특별법으로 부산공공은행, 00구/군 공공은행을 설립해 공공성과 일자리로 부산경제를 살려야 합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ④ 문제는 돈입니다 -->
+        <div class="bank-money-section">
+            <div class="pledge-section-container text-center">
+                <h3 class="money-sub reveal">공공성과 일자리로<br>부산경제 얼마든지 살릴 수 있습니다</h3>
+                <h2 class="money-title reveal">문제는 <span class="navy">돈</span>입니다</h2>
+                <img src="assets/bank_key.png" alt="부산을 살리는 열쇠" class="bank-key-img reveal">
+                
+                <div class="money-bars reveal">
+                    <div class="money-bar light-blue">세금으로는 한계가 있습니다</div>
+                    <div class="money-bar sky">공공은행이 정답입니다</div>
+                    <div class="money-bar blue">시중은행 배불리기만 중단하면 됩니다</div>
+                </div>
+
+                <div class="money-arrows reveal">
+                    <div class="arrow-box dark">부산의 돈이 수도권으로<br>빨려들어가는 걸 막아야합니다</div>
+                    <div class="arrow-box navy">공공은행만 있으면 부산의 돈이<br>부산에서 순환하면서 부산경제를 살찌웁니다.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ⑤ 메커니즘 & 혜택 -->
+        <div class="bank-mechanism-section">
+            <div class="pledge-section-container">
+                <div class="mech-grid reveal">
+                    <!-- 다이어그램 -->
+                    <div class="mech-diagram">
+                        <div class="diag-title">지역 내 중앙은행으로 역할</div>
+                        <div class="diag-box">
+                            <div class="diag-item">
+                                <div class="icon">🏦</div>
+                                <span>지역공공은행</span>
+                            </div>
+                            
+                            <div class="diag-lines-wrap">
+                                <div class="diag-line-group">
+                                    <span class="dl-text">지자체 발행 지방채 즉시 매입</span>
+                                    <div class="dl-line dl-line-right"></div>
+                                </div>
+                                <div class="diag-line-group">
+                                    <div class="dl-line dl-line-left"></div>
+                                    <span class="dl-text dl-bottom">지자체에 대한 신속한 정책자금 공급</span>
+                                </div>
+                            </div>
+                            
+                            <div class="diag-item">
+                                <div class="icon">🏢</div>
+                                <span>지방자치단체</span>
+                            </div>
+                        </div>
+                        <p class="diag-note">지방재정 긴축 불필요<br>(지방재정위기 최소화)</p>
+                    </div>
+
+                    <!-- 혜택 리스트 -->
+                    <div class="mech-benefits">
+                        <div class="ben-group">
+                            <h4 class="ben-title">공적금융지원</h4>
+                            <ul>
+                                <li>부산시민, 소상공인, 부산중소기업 <strong>저리대출</strong></li>
+                            </ul>
+                        </div>
+                        <div class="ben-group">
+                            <h4 class="ben-title">재정부담 없는 공공정책</h4>
+                            <ul>
+                                <li>해상풍력 등 공공에너지-해양공공신산업, 공공은행, 공공배달 등 공공 정규직 <strong>청년일자리 대폭 창출</strong></li>
+                                <li><strong>청년창업</strong> 무이자 대출론 지원</li>
+                                <li>시니어 일자리 대폭확대</li>
+                                <li>경력단절기간 여성 공공일자리 (워킹스쿨버스,상담,교육)</li>
+                                <li>무료마을공공버스 (연제구 전지역을 역세권으로)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ⑥ 성공사례 -->
+        <div class="bank-global-section">
+            <div class="pledge-section-container">
+                <h3 class="global-title reveal">이윤대신 지역살리기를 목적으로<br><strong>지자체가 설립한</strong> <span class="navy">공공은행 성공사례</span></h3>
+                
+                <div class="global-grid reveal">
+                    <div class="global-card">
+                        <div class="g-head"><span class="flag">🇺🇸</span> 미국 <strong>노스다코타주 주립은행</strong></div>
+                        <ul>
+                            <li>100% 주정부소유로 1919년 설립</li>
+                            <li>2008년 금융위기때 미국내 유일 흑자유지은행</li>
+                        </ul>
+                    </div>
+                    <div class="global-card">
+                        <div class="g-head"><span class="flag">🇩🇪</span> 독일 <strong>슈파카센</strong></div>
+                        <ul>
+                            <li>지역정부와 지역사회 공동운영</li>
+                            <li>독일은행시장 25%점유율</li>
+                        </ul>
+                    </div>
+                    <div class="global-card">
+                        <div class="g-head"><span class="flag">🇦🇷</span> 아르헨티나 <strong>부에노스아이레스 주립은행</strong></div>
+                        <ul>
+                            <li>주정부가 1882년 설립</li>
+                            <li>지역경제의 최후의 보루역할</li>
+                        </ul>
+                    </div>
+                    <div class="global-card">
+                        <div class="g-head"><span class="flag">🇨🇦</span> 캐나다 <strong>알버타주 주립은행</strong></div>
+                        <ul>
+                            <li>1938년 대공황때 설립</li>
+                            <li>캐나다 서부 최대금융기관중 하나</li>
+                        </ul>
+                    </div>
+                    <div class="global-card">
+                        <div class="g-head"><span class="flag">🇨🇭</span> 스위스 <strong>칸톤은행</strong></div>
+                        <ul>
+                            <li>스위스 26개 주중 24개주에서 운영</li>
+                            <li>19세기 설립하여 시장점유율 30%</li>
+                        </ul>
+                    </div>
+                    <div class="global-card">
+                        <div class="g-head"><span class="flag">🇳🇿</span> 뉴질랜드 <strong>키위뱅크</strong></div>
+                        <ul>
+                            <li>2002년에 호주계 민간은행에 맞서 뉴질랜드 정부가 설립</li>
+                            <li>뉴질랜드 국민의 엄청난 지지</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <span class="footer-num">5</span>
+            <span class="footer-name">이승민</span>
+        </div>
+        <div class="footer-info">
+            <p>부산광역시의원 예비후보 · 거제동, 연산2·5동</p>
+            <p>진보당 · 내란청산 진심후보</p>
+        </div>
+        <div class="footer-party">진보당</div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

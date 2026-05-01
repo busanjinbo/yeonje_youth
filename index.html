@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>기호5번 이승민 | 부산광역시의원 예비후보</title>
+    <meta name="description" content="진보당 이승민 부산광역시의원 예비후보 - 거제동, 연산2·5동 / 내란청산 진심후보 이승민의 공약을 확인하세요.">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="기호5번 이승민 부산시의원">
+    <meta property="og:title" content="진보당 이승민 부산광역시의원 예비후보">
+    <meta property="og:description" content="내란청산 진심후보 이승민 - 거제동, 연산2·5동">
+    <meta property="og:image" content="assets/thumbnail.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="기호5번 이승민 부산광역시의원 예비후보">
+    <meta name="twitter:description" content="내란청산 진심후보 이승민 - 거제동, 연산2·5동">
+    <meta name="twitter:image" content="assets/thumbnail.jpg">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ============================================================
+     TOP NAV
+============================================================ -->
+<nav class="top-nav" id="top-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/logo.png" alt="진보당" style="height:20px; margin-right:0.2rem; display:block;">
+            <span class="nav-num">5</span>
+            <span class="nav-name">이승민</span>
+            <span class="nav-sub">부산시의원 예비후보</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">홈</a>
+            <a href="pledge.html" class="nav-link">공약</a>
+        </div>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="메뉴 열기">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html" class="mobile-link">🏠 홈</a>
+        <a href="pledge.html" class="mobile-link">📋 공약</a>
+        <a href="pledge.html#pledge-job" class="mobile-link">· 청년 일자리</a>
+        <a href="pledge.html#pledge-delivery" class="mobile-link">· 공공배달</a>
+        <a href="pledge.html#pledge-bank" class="mobile-link">· 공공은행</a>
+    </div>
+</nav>
+
+<!-- ============================================================
+     HERO SECTION (메인 전체화면)
+============================================================ -->
+<section class="hero" id="hero">
+    <!-- 배경 파티클 캔버스 -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- 배경 그래디언트 레이어 -->
+    <div class="hero-bg"></div>
+
+    <!-- 물결 구분선 -->
+    <div class="hero-wave-bottom">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
+        </svg>
+    </div>
+
+    <div class="hero-container">
+        <!-- 왼쪽: 텍스트 영역 -->
+        <div class="hero-text" id="hero-text">
+            <!-- 슬로건 -->
+            <h2 class="hero-slogan reveal-hero" style="animation-delay:0.2s">
+                내란청산<br>진심후보
+            </h2>
+
+            <!-- 후보 이름 -->
+            <div class="hero-name-wrap reveal-hero" style="animation-delay:0.35s">
+                <h1 class="hero-name">이승민</h1>
+                <div class="hero-position">
+                    <span>부산시의원 예비후보</span>
+                    <span class="hero-district">거제동 · 연산2·5동</span>
+                </div>
+            </div>
+
+            <!-- 약력 -->
+            <ul class="hero-career reveal-hero" style="animation-delay:0.5s">
+                <li style="white-space:nowrap; letter-spacing:-0.5px;"><i class="fas fa-circle-dot"></i> 내란청산응원봉 부산집회 사회자 (전)</li>
+            </ul>
+
+            <!-- CTA 버튼 -->
+            <div class="hero-cta reveal-hero" style="animation-delay:0.65s">
+                <a href="pledge.html" class="btn-primary">
+                    <i class="fas fa-bullhorn"></i> 공약 보러가기
+                </a>
+                <a href="#about" class="btn-secondary">
+                    <i class="fas fa-user"></i> 후보 소개
+                </a>
+            </div>
+        </div>
+
+        <!-- 오른쪽: 후보 사진 -->
+        <div class="hero-photo-wrap reveal-hero" style="animation-delay:0.15s">
+            <div class="hero-photo-glow"></div>
+            <div class="hero-photo-circle">
+                <img src="assets/candidate.png" alt="이승민 후보" class="hero-photo" id="hero-img">
+            </div>
+            <!-- 플로팅 태그들 -->
+            <div class="float-tag tag-youth">🔥 청년후보</div>
+            <div class="float-tag tag-jinbo">진보당</div>
+        </div>
+    </div>
+
+    <!-- 스크롤 유도 -->
+    <div class="scroll-hint">
+        <span>스크롤</span>
+        <div class="scroll-arrow">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     소개 SECTION
+============================================================ -->
+<section class="about-section" id="about">
+    <div class="section-container">
+        <div class="section-header reveal">
+            <span class="section-tag">ABOUT</span>
+            <h2 class="section-title">이승민을 소개합니다</h2>
+            <p class="section-desc">부산의 청년이 직접 나섰습니다</p>
+        </div>
+
+        <div class="about-grid">
+            <!-- 프로필 카드 -->
+            <div class="about-profile-card reveal">
+                <div class="profile-photo-wrap">
+                    <img src="assets/candidate.png" alt="이승민 후보" class="profile-photo">
+                    <div class="profile-num-badge">5</div>
+                </div>
+                <div class="profile-info">
+                    <div class="profile-name-row">
+                        <strong class="profile-name">이승민</strong>
+                        <span class="profile-party-tag">진보당</span>
+                    </div>
+                    <p class="profile-position">부산광역시의원 예비후보</p>
+                    <p class="profile-district">📍 거제동 · 연산2·5동</p>
+                </div>
+            </div>
+
+            <!-- 약력 카드 -->
+            <div class="about-career-card reveal" style="transition-delay:0.15s">
+                <h3 class="card-title"><i class="fas fa-star"></i> 걸어온 길</h3>
+                <ul class="career-list">
+                    <li>
+                        <div class="career-icon"><i class="fas fa-microphone"></i></div>
+                        <div>
+                            <strong>내란청산응원봉 부산집회 사회자</strong>
+                            <span class="career-year">(전)</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="career-icon"><i class="fas fa-fist-raised"></i></div>
+                        <div>
+                            <strong>부산윤석열퇴진대학생행동 대표</strong>
+                            <span class="career-year">(전)</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="career-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div>
+                            <strong>부산대학교 기계공학부</strong>
+                            <span class="career-year">(휴학 중)</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 메시지 카드 -->
+            <div class="about-message-card reveal" style="transition-delay:0.3s">
+                <div class="message-quote">"</div>
+                <p class="message-text">
+                    청년의 목소리로<br>
+                    부산을 바꾸겠습니다.<br>
+                    <strong>행동하는 청년, 이승민</strong>이<br>
+                    함께하겠습니다.
+                </p>
+                <div class="message-sig">— 이승민</div>
+            </div>
+        </div>
+
+        <!-- 공약 바로가기 배너 -->
+        <div class="pledge-banner reveal">
+            <div class="pledge-banner-text">
+                <span class="banner-label">이승민의 3대 공약</span>
+                <h3>청년이 살고싶은 부산을 만들겠습니다</h3>
+            </div>
+            <a href="pledge.html" class="banner-btn">
+                공약 보기 <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <!-- 공약 미리보기 카드 3개 -->
+        <div class="pledge-preview-grid">
+            <a href="pledge.html?tab=job" class="pledge-preview-card reveal">
+                <div class="preview-icon">💼</div>
+                <h4>청년 일자리</h4>
+                <p>청년이 부산에서<br>일할 수 있는 환경</p>
+                <span class="preview-arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+            <a href="pledge.html?tab=delivery" class="pledge-preview-card reveal" style="transition-delay:0.1s">
+                <div class="preview-icon">🛵</div>
+                <h4>공공배달</h4>
+                <p>배달플랫폼 독점에서<br>소상공인을 지킵니다</p>
+                <span class="preview-arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+            <a href="pledge.html?tab=bank" class="pledge-preview-card reveal" style="transition-delay:0.2s">
+                <div class="preview-icon">🏦</div>
+                <h4>공공은행</h4>
+                <p>부산의 돈이<br>부산에서 돌게</p>
+                <span class="preview-arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <span class="footer-slogan" style="font-weight: 800; color: var(--navy); margin-right: 0.3rem;">내란청산 진심후보</span>
+            <span class="footer-num">5</span>
+            <span class="footer-name">이승민</span>
+        </div>
+        <div class="footer-info">
+            <p>부산광역시의원 예비후보 · 거제동, 연산2·5동</p>
+            <p>진보당</p>
+        </div>
+        <div class="footer-party">진보당</div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

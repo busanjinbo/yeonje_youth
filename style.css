@@ -379,7 +379,7 @@ button{cursor:pointer;border:none;background:none;font-family:var(--font)}
 
 /* ── FOOTER ── */
 .site-footer{
-  background:var(--navy-dark);padding:2rem 1.5rem;
+  background:var(--sky-light);padding:2rem 1.5rem;
   border-top:3px solid var(--sky-mid);
 }
 .footer-inner{
@@ -393,8 +393,8 @@ button{cursor:pointer;border:none;background:none;font-family:var(--font)}
   border-radius:50%;font-weight:900;font-size:1rem;
   display:flex;align-items:center;justify-content:center;
 }
-.footer-name{color:#fff;font-weight:800;font-size:1.1rem}
-.footer-info p{color:rgba(255,255,255,.5);font-size:.8rem;line-height:1.6}
+.footer-name{color:var(--navy-dark);font-weight:800;font-size:1.1rem}
+.footer-info p{color:var(--gray);font-size:.8rem;line-height:1.6}
 .footer-party{
   background:rgba(255,255,255,.1);color:rgba(255,255,255,.7);
   border-radius:8px;padding:.4rem .9rem;font-size:.8rem;font-weight:700;

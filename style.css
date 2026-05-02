@@ -812,6 +812,7 @@ button{cursor:pointer;border:none;background:none;font-family:var(--font)}
   .bank-main-title strong{font-size:2.6rem;}
   .global-title{font-size:1.4rem;}
   .global-title strong{font-size:1.6rem;}
+  .scroll-hint{display:none}
 }
 @media(max-width:640px){
   .nav-links{display:none}
